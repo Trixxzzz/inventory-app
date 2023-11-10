@@ -4,7 +4,7 @@ body {
   padding: 0;
   background: url('https://blog.depositphotos.com/wp-content/uploads/2017/07/Soothing-nature-backgrounds-2.jpg') no-repeat center center fixed;
   background-size: cover;
-  filter: brightness(100%) grayscale(10%);
+  filter: brightness(100%) grayscale(0%);
 }
 
 .App {
@@ -61,6 +61,15 @@ ul {
 
 li {
   margin-bottom: 8px;
+}
+li button {
+  margin-left: 10px;
+  background-color: #ff3b3b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
 .ItemDisplay {

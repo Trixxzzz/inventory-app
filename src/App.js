@@ -12,11 +12,16 @@ function App() {
     }
   };
 
+  const deleteItem = (index) => {
+    const updatedInventory = inventory.filter((_, i) => i !== index);
+    setInventory(updatedInventory);
+  };
+
   return (
     <div className="App">
       <h1>Inventory Management System</h1>
       <AddItemForm addItem={addItem} />
-      <ItemDisplay items={inventory} />
+      <ItemDisplay items={inventory} deleteItem={deleteItem} />
     </div>
   );
 }
